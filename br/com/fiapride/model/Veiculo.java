@@ -33,20 +33,24 @@ public class Veiculo {
     }
 
     private void setEstaRegular(boolean estaRegular) {
-        this.estaRegular = estaRegular;
+        if (estaRegular == true){
+            System.out.println("Está regular");
+        }else{
+            System.out.println("Não está regular, verifique o motivo");
+        }
     }
 
 
 
     // FIM DOS GETTERS E SETTERS
 
-    public Veiculo(String modelo , String placa , int anoDoCarro){
+    public Veiculo(String modelo , String placa , int anoDoCarro, boolean estaRegular){
         this.modelo = modelo;
         this.setPlaca(placa);
         this.setAnoDoCarro(anoDoCarro);
-        this.setEstaRegular(true);
+        this.setEstaRegular(false);
         this.setNovaPlaca(placa);
-        System.out.println("Modelo do carro: "+ this.modelo + " Placa inicial: "+ this.placa + "Está regular? " + this.estaRegular);
+        System.out.println("Modelo do carro: "+ this.modelo + " Placa inicial: "+ this.placa);
     }
 
     // metodo de atualizar a placa

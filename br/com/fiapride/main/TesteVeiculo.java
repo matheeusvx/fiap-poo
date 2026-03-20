@@ -3,8 +3,7 @@ import br.com.fiapride.model.Veiculo;
 
 public class TesteVeiculo {
     public static void main(String[] args) {
-        Veiculo meuCarro = new Veiculo("T-Cross", "POY-4567",2024);
-        meuCarro.atualizarPlaca("TYG-8765");
-        meuCarro.
+        Veiculo meuCarro = new Veiculo("T-Cross", "POY-4567",2024, false);
+
     }
 }

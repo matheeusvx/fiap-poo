@@ -5,20 +5,10 @@ public class TesteTelevisao {
         System.out.println("--- Teste do Meu Projeto Pessoal ---");
 
         // 1. Instanciando o objeto (criando o espaço na memória)
-        Televisao minhaTelevisao = new Televisao();
+        Televisao minhaTelevisao = new Televisao("Preta", 55, "LG" );
 
-        // 2. Definindo os atributos diretamente
-        minhaTelevisao.marca = "Samsung";
-        minhaTelevisao.tamanho = 55;
-
-        // 3. Testando algum comportamento (se você criou na Aula 02)
-        // minhaTelevisao.ligar();
-
-        // 4. Imprimindo o resultado no console
-        System.out.println("Marca da televisão: " + minhaTelevisao.marca);
-        System.out.println("Tamanho: " + minhaTelevisao.tamanho + " polegadas");
-
-            }
-        }
+        System.out.println("Características da TV: " + minhaTelevisao.getMarca() + minhaTelevisao.getCor() + minhaTelevisao.getTamanho());
+    }
+}
 
 

@@ -2,6 +2,9 @@ package br.com.fiapride.main;
 
 import br.com.fiapride.model.Passageiro;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+
 public class SistemaPrincipal {
 
     public static void main(String[] args) {
@@ -33,5 +36,14 @@ public class SistemaPrincipal {
 
         System.out.println("\nPagando viagem do passageiro 2 (Carlos)...");
         passageiro2.pagarViagem(20.0);
+
+        ArrayList <Passageiro> lista = new ArrayList<>();
+        lista.add(passageiro1);
+        lista.add(passageiro2);
+
+        System.out.println("Quantidade de passageiros cadastrados: " + lista.size());
+
+
+
     }
 }

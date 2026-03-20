@@ -7,7 +7,7 @@ public class Passageiro {
     private String cpf;
     private double saldo;
 
-    // CONSTRUTOR
+    // ATRIBUTOS
     public Passageiro(String nome, String cpf) {
         this.setNome(nome);
         this.setCpf(cpf);

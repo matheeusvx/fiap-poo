@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
-public class Televisao { // <-- Use o nome do SEU objeto
-    // As características que você pensou
+public class Televisao {
+
     private String cor;
     private int tamanho;
     private String marca;

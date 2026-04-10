@@ -2,21 +2,21 @@ package br.com.fiapride.model;
 public class Televisao {
 
     private String cor;
-    private int tamanho;
+    private int polegadas;
     private String marca;
 
     public Televisao(String cor , int tamanho , String marca){
         this.setCor(cor);
         this.setMarca(marca);
-        this.setTamanho(tamanho);
+        this.setPolegadas(tamanho);
     }
 
     public String getCor() {
         return cor;
     }
 
-    public int getTamanho() {
-        return tamanho;
+    public int getPolegadas() {
+        return polegadas;
     }
 
     public String getMarca() {
@@ -27,8 +27,8 @@ public class Televisao {
         this.cor = cor;
     }
 
-    public void setTamanho(int tamanho) {
-        this.tamanho = tamanho;
+    public void setPolegadas(int polegadas) {
+        this.polegadas = polegadas;
     }
 
     public void setMarca(String marca) {

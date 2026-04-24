@@ -14,4 +14,9 @@ public class TVSmart extends Televisao{
     public void setSmart(boolean smart) { // setters
         isSmart = smart;
     }
+
+    @Override
+    public String ligar() {
+        return "Ligando TV Smart com acesso à internet e aplicativos.";
+    }
 }

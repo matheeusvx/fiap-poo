@@ -34,4 +34,8 @@ public class Televisao {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+
+    public String ligar() {
+        return "A televisão está sendo ligada.";
+    }
 }

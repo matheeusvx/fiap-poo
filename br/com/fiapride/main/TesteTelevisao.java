@@ -3,13 +3,15 @@ import br.com.fiapride.model.Controle;
 import br.com.fiapride.model.Televisao;
 import br.com.fiapride.model.TVSmart;
 import br.com.fiapride.model.TVTubo;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TesteTelevisao {
     public static void main(String[] args) {
         System.out.println("--- Teste do Meu Projeto Pessoal ---");
 
         // 1. Instanciando o objeto (criando o espaço na memória)
-        Televisao minhaTelevisao = new Televisao("Preta", 55, "LG" );
+        Televisao minhaTelevisao = new Televisao("Preta", 55, "LG");
 
         System.out.println("--- Características da TV --- || Marca: " + minhaTelevisao.getMarca() + " || Cor: " + minhaTelevisao.getCor() + " || Polegadas: " + minhaTelevisao.getPolegadas() + " polegadas");
 
@@ -32,6 +34,15 @@ public class TesteTelevisao {
                     + tubo1.getMarca() + " || Polegadas: " + tubo1.getPolegadas());
         } else {
             System.out.println("TV de tubo SEM entrada AV.");
+        }
+
+        List<Televisao> lista = new ArrayList<>();
+
+        lista.add(new TVSmart("Preta", 50, "Samsung", true));
+        lista.add(new TVTubo("Cinza", 29, "Philco", true));
+
+        for (Televisao tv : lista) {
+            System.out.println(tv.ligar());
         }
     }
 }

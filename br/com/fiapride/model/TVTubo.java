@@ -22,4 +22,9 @@ public class TVTubo extends Televisao {
     public void setEntradaAV(boolean entradaAV) {
         this.entradaAV = entradaAV;
     }
+
+    @Override
+    public String ligar() {
+        return "Ligando TV de tubo com sinal analógico.";
+    }
 }
